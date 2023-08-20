@@ -8,7 +8,7 @@ is not professional buh i will try my best*/
     }
     
     body {
-        background-color: #ff5a00;
+        background-color: #252f65;
         width: 100%;
         margin: 0;
         padding: 1em;
@@ -35,6 +35,8 @@ is not professional buh i will try my best*/
     
     menu ul li {
         display: inline-block;
+        transition: 0.3s;
+        transition-timing-function: ease-out;
     }
     
     menu ul li .m {
@@ -47,32 +49,32 @@ is not professional buh i will try my best*/
         text-decoration: none;
         color: #ffffff;
         cursor: pointer;
-        transition: .2s ease-in-out;
     }
     
     menu ul li:hover {
-        padding-bottom: 4px;
+        padding-bottom: 1px;
         color: #cfe8ef;
-        border-bottom: 1px solid #fce563;
+        border-bottom: 2px solid rgb(145, 142, 142);
     }
     
     .heroPage {
         display: flex;
-        margin: 0em;
+        margin: 0;
+        margin-top: 2em;
     }
     
     .article {
         width: 40%;
         color: #ffffff;
         font-family: Arial, Helvetica, sans-serif;
-        margin: 8em 2em 3em 6em;
+        margin: 8em 2em 4em 6em;
     }
     
     .article h2 #fstWord {
-        background-color: #3e2a35;
+        background-color: rgb(145, 142, 142);
         border-radius: 0.2em;
         color: #ffffff;
-        padding: 0.2em;
+        padding: 0.2em 0.3em;
         margin-right: 0.3em;
         font-size: 20px;
     }
@@ -92,24 +94,25 @@ is not professional buh i will try my best*/
     
     #heroImg {
         width: 60%;
+        padding-top: 0rem;
     }
     
     #heroImg img {
-        width: 80%;
-        height: auto;
+        width: 100%;
+        min-height: auto;
     }
     
     .secPage {
-        background-color: #3e2a35;
-        margin: 3em;
-        padding: 2em;
+        background-color: rgb(145, 142, 142);
+        margin: 1em 3em 3em 3em;
+        padding: 1rem 2em;
         border-radius: 0.7em;
         font-family: Arial, Helvetica, sans-serif;
         color: #fff;
     }
     
     .secPage h1 {
-        font-size: 30px;
+        font-size: 2.1rem;
         text-align: center;
     }
     
@@ -120,20 +123,23 @@ is not professional buh i will try my best*/
     }
     
     button {
-        padding: 1em 1.3em;
-        background-color: #ff5a00;
+        width: 8.4rem;
+        height: 2.78rem;
+        background-color: rgb(145, 142, 142);
         color: #ffffff;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-        border: 0px;
-        border-radius: 0.5em;
+        font-size: 15px;
+        border: 1px solid #000;
+        font-weight: 600;
+        border-radius: 0.3em 0.6em;
         margin-bottom: 1em;
-        box-shadow: 0 0 15px rgb(0, 0, 0, 5);
+        box-shadow: 0 0 6px 0 rgb(0, 0, 0);
         cursor: pointer;
     }
     
     button:hover {
         box-shadow: none;
+        border: none;
     }
     
     .sechead {
@@ -151,7 +157,7 @@ is not professional buh i will try my best*/
     }
     
     .sechead hr {
-        color: #3e2a35;
+        color: rgb(145, 142, 142);
         height: 1px;
         width: 200px;
         margin-top: 0.7em;
@@ -179,7 +185,7 @@ is not professional buh i will try my best*/
         font-size: 20px;
         font-weight: 600;
         margin-top: 0;
-        color: #3e2a35;
+        color: rgb(145, 142, 142);
         justify-content: flex-start;
     }
     
@@ -265,12 +271,17 @@ is not professional buh i will try my best*/
     
     .projectsDetails h3 {
         font-size: 23px;
-        font-weight: 500;
+        font-weight: 600;
+        padding: 0 8px;
+        margin-top: 10px;
+        margin-bottom: 7px;
     }
     
     .projectsDetails p {
         font-size: 15px;
         font-weight: 300;
+        padding: 0 8px;
+        margin-top: 2px;
     }
     
     .contact {
@@ -278,15 +289,12 @@ is not professional buh i will try my best*/
     }
     
     .info {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
         padding: 0 2em;
     }
     
     .liit {
         display: block;
-        width: 40rem;
+        width: 70rem;
     }
     
     .infoicons ul li {
@@ -309,7 +317,8 @@ is not professional buh i will try my best*/
     }
     
     .connect {
-        width: 37rem;
+        width: 70rem;
+        margin-bottom: 30px;
     }
     
     .connect ul {
@@ -328,17 +337,168 @@ is not professional buh i will try my best*/
         font-size: 20px;
         padding: 8px 9px;
         border-radius: 50%;
-        background-color: #ff5a00;
-        box-shadow: 1px 0px 1px 0px #000;
+        background-color: #252f65;
+        box-shadow: 0px 0px 5px 0px #000;
     }
     
     .connect i {
-        color: #3e2a35;
+        color: rgb(145, 142, 142);
     }
     
     footer {
+        font-size: 13px;
+        font-weight: 400;
         color: #fff;
         padding-left: 1em;
+        margin-top: 4rem;
+    }
+    /* tablet responsive view */
+    
+    @media (max-width: 1000px) and (min-width: 601px) {
+        body {
+            padding: 1em;
+            margin: auto;
+        }
+        nav {
+            display: flex;
+            padding: 0;
+            padding-left: 2em;
+        }
+        nav h1 {
+            padding: 0;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            width: 30%;
+            color: #ffffff;
+            pointer-events: none;
+        }
+        menu {
+            width: 42rem;
+        }
+        menu ul {
+            margin-left: 6px;
+        }
+        menu ul li {
+            display: inline-block;
+        }
+        menu ul li .m {
+            padding: 1em 0.7rem;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: space-between;
+            list-style: none;
+            text-decoration: none;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        .heroPage {
+            display: block;
+            margin-top: 6em;
+            padding-bottom: 1em;
+        }
+        .article {
+            width: auto;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            margin-top: 6em;
+        }
+        .article h2 #fstWord {
+            background-color: rgb(145, 142, 142);
+            border-radius: 0.2em;
+            color: #ffffff;
+            padding: 0.3em;
+            margin-right: 5px;
+            font-size: 20px;
+        }
+        .article h2 {
+            font-size: 20px;
+            padding-bottom: 2px;
+        }
+        .article h3 {
+            padding-bottom: 0.5em;
+        }
+        .article p {
+            font-size: 15px;
+        }
+        #heroImg {
+            width: auto;
+        }
+        #heroImg img {
+            width: 95%;
+            height: auto;
+            margin-top: 2rem;
+        }
+        .secPage {
+            margin: 0.6em;
+            padding: 1em 2em;
+            border-radius: 0.7em;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        button:hover {
+            box-shadow: none;
+        }
+        .section2 {
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            padding: 0;
+        }
+        .section2 h1 {
+            text-align: center;
+            padding-top: 2em;
+        }
+        .section2 .container {
+            display: flex;
+            padding-top: 0em;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        .section2 .servicesList {
+            border: 3px solid #03256c;
+            border-radius: 1em;
+            padding: 1em;
+            margin: 0.9em;
+            margin-bottom: 0;
+        }
+        .card-slide .slide {
+            padding-top: 2rem;
+        }
+        .rdsection h2 {
+            color: #ffffff;
+            text-align: center;
+        }
+        .projects {
+            display: flex;
+            padding: 1em 0em;
+            flex-wrap: wrap;
+        }
+        .projects .container {
+            border: #fff 1px solid;
+            color: #fff;
+            padding: 0.2em;
+            margin: 0.5em;
+            width: 17.2rem;
+            height: 28rem;
+        }
+        .container img {
+            max-width: 60rem;
+            min-width: 15rem;
+            height: 17rem;
+            border-radius: 8px;
+        }
+        .projectsDetails h3 {
+            font-size: 23px;
+            font-weight: 500;
+        }
+        .projectsDetails p {
+            font-size: 15px;
+            font-weight: 300;
+        }
     }
     
     @media screen and (min-width: 601px) {
@@ -396,9 +556,9 @@ is not professional buh i will try my best*/
             height: 30px;
             width: 30px;
             top: 25px;
+            align-items: end;
+            right: 1em;
             box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
-            left: 21em;
-            right: 0;
             z-index: 1;
             cursor: pointer;
             border-radius: 2px;
@@ -792,153 +952,5 @@ is not professional buh i will try my best*/
         }
         .projectsDetails p {
             font-size: 12px;
-        }
-    }
-    /* tablet responsive view */
-    
-    @media (max-width: 1000px) and (min-width: 601px) {
-        body {
-            padding: 2em;
-            margin: auto;
-        }
-        nav {
-            display: flex;
-            padding: 0;
-            padding-left: 3em;
-        }
-        nav h1 {
-            padding: 0;
-            font-size: 20px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 700;
-            width: 30%;
-            color: #ffffff;
-            pointer-events: none;
-        }
-        menu {
-            width: 70%;
-        }
-        menu ul {
-            margin-left: 2em;
-        }
-        menu ul li {
-            display: inline-block;
-        }
-        menu ul li .m {
-            padding: 1em 1.5em;
-            font-size: 16px;
-            font-weight: 500;
-            font-family: Arial, Helvetica, sans-serif;
-            justify-content: space-between;
-            list-style: none;
-            text-decoration: none;
-            color: #ffffff;
-            cursor: pointer;
-        }
-        menu ul li:hover {
-            text-decoration-color: #03256c;
-        }
-        .heroPage {
-            display: flex;
-            margin-top: 3em;
-            padding-bottom: 1em;
-        }
-        .article {
-            width: 50%;
-            color: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-            margin-top: 6em;
-        }
-        .article h2 #fstWord {
-            background-color: #043aae;
-            border-radius: 0.2em;
-            color: #ffffff;
-            padding: 0.3em;
-            margin-right: 5px;
-            font-size: 20px;
-        }
-        .article h2 {
-            font-size: 20px;
-            padding-bottom: 2px;
-        }
-        .article h3 {
-            padding-bottom: 0.5em;
-        }
-        .article p {
-            font-size: 15px;
-        }
-        #heroImg {
-            width: 50%;
-        }
-        #heroImg img {
-            width: 95%;
-            height: auto;
-        }
-        .secPage {
-            background-color: #ffffff;
-            margin: 0.6em;
-            padding: 1em 2em;
-            border-radius: 0.7em;
-            font-family: Arial, Helvetica, sans-serif
-        }
-        button {
-            padding: 1.2em 1.8em;
-            background-color: #043aae;
-        }
-        button:hover {
-            box-shadow: none;
-        }
-        .section2 {
-            color: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 2em;
-        }
-        .section2 h1 {
-            text-align: center;
-            font-size: 28px;
-            padding-top: 2em;
-        }
-        .section2 .container {
-            display: flex;
-            padding-top: 0em;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .section2 .servicesList {
-            border: 3px solid #03256c;
-            width: 45%;
-            border-radius: 1em;
-            padding: 1em;
-            margin: 0.8em;
-        }
-        .rdsection h2 {
-            color: #ffffff;
-            text-align: center;
-            padding-top: 2em;
-            font-size: 28px;
-        }
-        .projects {
-            display: flex;
-            padding: 1em 1em;
-            flex-wrap: wrap;
-        }
-        .projects .container {
-            border: #fff 1px solid;
-            color: #fff;
-            padding: 0.2em;
-            margin: 0.5em;
-            width: 47%;
-        }
-        .container img {
-            width: 100%;
-        }
-        .projectsDetails h3 {
-            font-size: 23px;
-            font-weight: 500;
-        }
-        .projectsDetails p {
-            font-size: 15px;
-            font-weight: 300;
         }
     }
