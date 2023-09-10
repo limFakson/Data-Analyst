@@ -210,6 +210,12 @@ is not professional buh i will try my best*/
         font-size: 23px;
     }
     
+    .servicesList h4 {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
     .servicesList p {
         margin-top: 5px;
         font-size: 15px;

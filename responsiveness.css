@@ -211,24 +211,19 @@
         color: #ffffff;
         text-align: center;
     }
-    .projects {
-        display: flex;
-        padding: 1em 0em;
-        flex-wrap: wrap;
-    }
     .projects .container {
         border: #fff 1px solid;
         color: #fff;
         padding: 0.2em;
-        margin: 0.5em;
         width: 17.2rem;
-        height: 28rem;
+        height: 20rem;
+    }
+    .pro-img {
+        width: 16.6rem;
+        height: 8rem;
     }
     .container img {
-        max-width: 60rem;
-        min-width: 16rem;
-        height: 16.7rem;
-        border-radius: 8px;
+        object-fit: contain;
     }
     .projectsDetails h3 {
         font-size: 20px;
@@ -481,6 +476,10 @@
     }
     .sechead h2 {
         font-size: 20px;
+        margin-right: 3px;
+    }
+    .sechead hr {
+        margin-left: 2px;
     }
     .section2 {
         margin: 0;
@@ -525,19 +524,20 @@
     }
     .projects .container {
         border: #fff 1px solid;
-        width: 11rem;
-        height: 13rem;
+        width: 20rem;
+        height: 19rem;
         color: #fff;
         padding: 4px;
-        margin: 5px;
-        padding-left: 0;
-        margin-left: 0;
     }
-    .projectsDetails {
-        background-color: #00000059;
+    .pro-img {
+        width: 19.3rem;
+        height: 9rem;
     }
     .container img {
-        display: none;
+        object-fit: contain;
+    }
+    .pro-img:hover img {
+        transform: scale(1.04);
     }
     .projectsDetails h3 {
         font-size: 18px;
@@ -569,7 +569,7 @@
     }
     .connect ul {
         display: flex;
-        position: relative;
+        position: static;
         bottom: 5px;
         justify-content: flex-start;
         margin-right: 8px;
@@ -774,6 +774,9 @@
         margin-bottom: 1em;
         cursor: pointer;
     }
+    .sechead {
+        margin-left: 0.6rem;
+    }
     .section2 {
         margin: 0;
         margin-top: 5em;
@@ -810,22 +813,18 @@
     .rdsection h2 {
         font-size: 20px;
     }
-    .projects {
-        padding: 0;
-        flex-wrap: wrap;
-        margin: 0;
-    }
     .projects .container {
         border: #fff 1px solid;
-        width: 13.2rem;
-        height: 23.5rem;
+        width: 16.6rem;
+        height: 18rem;
         color: #fff;
-        padding: 4px;
-        margin: 5px;
+    }
+    .pro-img {
+        width: 15.6rem;
+        height: 8rem;
     }
     .container img {
-        min-width: 6em;
-        height: 12.6rem;
+        object-fit: contain;
     }
     .projectsDetails h3 {
         font-size: 18px;
