@@ -300,7 +300,7 @@
         margin: auto;
         padding: 3px 1em;
         width: 100%;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
     menu {
         display: none;
