@@ -461,7 +461,7 @@
         font-weight: 700;
     }
     .secPage p {
-        font-size: 15px;
+        font-size: 0.9em ;
         font-weight: 500;
         padding-bottom: 1em;
     }
@@ -506,6 +506,12 @@
         border-radius: 1em;
         padding: 1em;
         margin: 0.3em;
+    }
+    .section2 .servicesList p{
+        font-size: 0.8em;
+    }
+    .card-slide{
+        margin: 0 10px;
     }
     .secsidee {
         padding-top: 2em;
